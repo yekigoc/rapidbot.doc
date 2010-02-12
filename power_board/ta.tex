@@ -1,0 +1,54 @@
+\documentclass[pdftex,14pt,a4paper,russian,utf8]{article}
+%\usepackage{pscyr}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[14pt]{extsizes}
+\usepackage[pdftex]{graphicx}
+\usepackage{geometry}
+%\usepackage[T2A]{fontenc}
+\usepackage{amssymb,amsmath}
+\usepackage{makecell}
+\usepackage{eskdpz}
+\usepackage{multirow}
+\geometry{left=2.5cm}
+\geometry{right=1cm}
+\geometry{top=2.0cm}
+\geometry{bottom=2.5cm}
+\linespread{1.3} % 1,5
+%\renewcommand{\rmdefault}{ftm}
+\setcounter{tocdepth}{2}
+\usepackage{graphics}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{wrapfig}
+%\renewcommand{\thesection}{}
+%\renewcommand{\thesubsection}{}
+%\renewcommand{\thesubsubsection}{}
+\begin{document}
+\input{./title.tex}
+
+
+\section{Введение.}
+\subsection{Наименование устройства.}
+\subsubsection{Наименование устройства : \textit{power board}, далее <<Устройство>>.}
+\subsection{Назначение и область применения.}
+\subsubsection{Устройство предназначено для работы в составе \textbf{RAPID} с целью.}
+\paragraph{}{Измерения уровня заряда трех аккумуляторов и предоставления этой информации основному контролирующему устройству.}
+\paragraph{}{Правильной коммутации аккумуляторов в процессе заряда.}
+\paragraph{}{Расширения состава датчиков основного контролирующего устройства \textbf{RAPID}}
+\section{Требования к устройству.}
+\subsection{Требования к функциональным характеристикам.}
+\subsubsection{Устройство должно обеспечивать возможность выполнения перечисленных ниже групп функций.}
+\paragraph{}{Измерение с помощью аналого-цифровых преобразователей уровней заряда аккумуляторов (напряжений, через делитель напряжения) и опционально (реализуется с помощью перемычек на плате) измерение тока (с помощью токоизмерительного сопротивления и усилителя).}
+\paragraph{}{Отключение цепей измерения напряжения и тока и подключения выходов контроллера устройства к выходам на плате напрямую (для сохранения возможности подключения внешних датчиков и исполнительных механизмов).}
+\paragraph{}{Коммутация аккумуляторов подключенных к устройству в режиме заряда (о переходе в режим заряда сигнализирует специальный датчик, часть устройства).}
+\paragraph{}{Взаимодействие с управляющим устройством посредством линии RS-485 и / или CAN.}
+\subsection{Требования к габаритам.}
+\subsubsection{Габариты устройства должны вписываться в прямоугольник 60х80 мм.}
+\subsection{Требования по унификации.}
+\subsubsection{Каждый разъем устройства должен быть уникальным для исключения возможности неправильного подключения.}
+\subsection{Требования к надежности.}
+\subsubsection{Устройство должно сохранять работоспособность при скачках напряжений аккумуляторов.}
+\subsubsection{Устройство должно сохранять работоспособность при питающих напряжениях от 6 до 15 В.}
+\end{document}
+
